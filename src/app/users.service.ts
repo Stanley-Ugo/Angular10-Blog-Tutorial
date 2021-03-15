@@ -6,4 +6,12 @@ import { Injectable } from '@angular/core';
 export class UsersService {
 
   constructor() { }
+
+  getData() {
+    return {
+      name: 'Peter',
+      age: 35,
+      id: 100
+    }
+  }
 }
