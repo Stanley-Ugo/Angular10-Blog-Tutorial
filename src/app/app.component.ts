@@ -8,8 +8,9 @@ import { UsersService } from './users.service'
 })
 export class AppComponent {
   appName = 'Blog App';
-  name = 'Bruce';
-  disableBox = true;
+  constructor(private user:UsersService) {
+    
+  }
 
   enableBox()
   {
