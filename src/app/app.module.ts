@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomeStyleDirective } from './custome-style.directive';
 import { AdminListComponent } from './admin-list/admin-list.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomeStyleDirective,
-    AdminListComponent
+    AdminListComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
