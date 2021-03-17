@@ -28,6 +28,6 @@ export class AppComponent {
     const { UserListComponent } = await import('./user-list/user-list.component');
     this.vcr.createComponent(
       this.cfr.resolveComponentFactory(UserListComponent)
-    )
+    );
   }
 }
