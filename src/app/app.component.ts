@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { UsersService } from './users.service'
 
 @Component({
@@ -8,7 +8,9 @@ import { UsersService } from './users.service'
 })
 export class AppComponent {
   appName = 'Blog App';
-  constructor(private user:UsersService) {
+  constructor(private user:UsersService,
+              private vcr: ViewContainerRef,
+              private cfr: ComponentFactoryResolver) {
 
   }
 
