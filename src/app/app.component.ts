@@ -15,11 +15,15 @@ export class AppComponent {
   }
 
 
-  loadAdmin() {
-
+  async loadAdmin() {
+    this.vcr.clear();
+    const { AdminListComponent } = await import('./admin-list/admin-list.component');
+    this.vcr.createComponent(
+      this.cfr.resolveComponentFactory(AdminListComponent)
+    )
   }
 
   loadUser() {
-    
+
   }
 }
