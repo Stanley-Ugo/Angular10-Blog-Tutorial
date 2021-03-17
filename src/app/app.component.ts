@@ -23,7 +23,11 @@ export class AppComponent {
     )
   }
 
-  loadUser() {
-
+  async loadUser() {
+    this.vcr.clear();
+    const { UserListComponent } = await import('./user-list/user-list.component');
+    this.vcr.createComponent(
+      this.cfr.resolveComponentFactory(UserListComponent)
+    )
   }
 }
