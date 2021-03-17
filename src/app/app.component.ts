@@ -14,4 +14,12 @@ export class AppComponent {
 
   }
 
+
+  loadAdmin() {
+
+  }
+
+  loadUser() {
+    
+  }
 }
